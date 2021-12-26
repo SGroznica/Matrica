@@ -41,11 +41,11 @@ public class PomocnaMatrica {
 		matrica[2][3]=24;
 		matrica[2][2]=25;
 		
-		System.out.println(Arrays.toString(matrica[0]));
-		System.out.println(Arrays.toString(matrica[1]));
-		System.out.println(Arrays.toString(matrica[2]));
-		System.out.println(Arrays.toString(matrica[3]));
-		System.out.println(Arrays.toString(matrica[4]));
+		for(int i=0;i<5;i++) {
+			System.out.println(Arrays.toString(matrica[i]));
+		}
+		
+		
 	}
 
 }
