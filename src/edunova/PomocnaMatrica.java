@@ -8,21 +8,80 @@ public class PomocnaMatrica {
 	public static void main(String[] args) {
 
 		int[][] matrica = new int[5][5];
+		int broj = 1;
 
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++) {
-				if (i == 4 && j == 4) {
-					matrica[i][j] = 1;
-				} else if (i == 4 && j == 3) {
-					matrica[i][j] = 2;
-				} else if (i == 4 && j == 2) {
-					matrica[i][j] = 3;
-				} else if (i == 4 && j == 1) {
-					matrica[i][j] = 4;
-				} else if (i == 4 && j == 0) {
-					matrica[i][j] = 5;
-				}
+		for (int i = 4; i >= 4; i--) {
+			for (int j = 4; j >= 0; j--) {
+				matrica[i][j] = broj++;
+
+				// if (i == 4 && j == 4) {
+				// matrica[i][j] = 1;
+				// } else if (i == 4 && j == 3) {
+				// matrica[i][j] = 2;
+				// } else if (i == 4 && j == 2) {
+				// matrica[i][j] = 3;
+				// } else if (i == 4 && j == 1) {
+				// matrica[i][j] = 4;
+				// } else if (i == 4 && j == 0) {
+				// matrica[i][j] = 5;
+				// }
 			}
+		}
+
+		for (int i = 3; i >= 0; i--) {
+			for (int j = 0; j >= 0; j--) {
+				matrica[i][j] = broj++;
+
+			}
+
+		}
+
+		for (int i = 0; i >= 0; i--) {
+			for (int j = 1; j <= 4; j++) {
+				matrica[i][j] = broj++;
+
+			}
+
+		}
+
+		for (int i = 1; i <= 3; i++) {
+			for (int j = 4; j >= 4; j--) {
+				matrica[i][j] = broj++;
+
+			}
+
+		}
+
+		for (int i = 3; i >= 3; i--) {
+			for (int j = 3; j >= 1; j--) {
+				matrica[i][j] = broj++;
+
+			}
+
+		}
+
+		for (int i = 2; i >= 1; i--) {
+			for (int j = 1; j >= 1; j--) {
+				matrica[i][j] = broj++;
+
+			}
+
+		}
+
+		for (int i = 1; i >= 1; i--) {
+			for (int j = 2; j <= 3; j++) {
+				matrica[i][j] = broj++;
+
+			}
+
+		}
+
+		for (int i = 2; i >= 2; i--) {
+			for (int j = 3; j >= 2; j--) {
+				matrica[i][j] = broj++;
+
+			}
+
 		}
 
 		for (int a = 0; a < 5; a++) {
