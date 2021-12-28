@@ -6,27 +6,27 @@ import javax.swing.JOptionPane;
 
 public class MatricaDZ {
 	public static void main(String[] args) {
-		
+
 		int x, y;
 
 		x = Integer.parseInt(JOptionPane.showInputDialog("Unesi cijeli broj"));
 		y = Integer.parseInt(JOptionPane.showInputDialog("Unesi cijeli broj"));
 
+		int broj = 1;
+
 		int[][] matrica = new int[x][y];
-		for (int i = 0; i < x; i++) {
-				System.out.println(Arrays.toString(matrica[i]));
-				
+		for (int i = x-1; i >= 0; i--) {
+			// System.out.println(Arrays.toString(matrica[i]));
+			for (int j = y-1; j >= 0; j--) {
+				matrica[i][j] = broj++;
+
 			}
-		
-		for(int a=0;a<x;a++) {
-			for(int b=0;b<y;b++) {
-				matrica[a][b]=Integer.parseInt(JOptionPane.showInputDialog("Unesi cijeli broj"));
-			}
-			
+
+		}
+
+		for (int a = 0; a < x; a++) {
 			System.out.println(Arrays.toString(matrica[a]));
 		}
-		}
 	}
-	
 
-
+}
