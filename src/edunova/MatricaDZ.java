@@ -1,16 +1,24 @@
 package edunova;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
 public class MatricaDZ {
 	public static void main(String[] args) {
 
-		int x, y;
+		Scanner ulaz = new Scanner(System.in);
+		
+		System.out.println("Unesi cijeli broj");
+		int x = ulaz.nextInt();
+		System.out.println("Unesi cijeli broj");
+		int y = ulaz.nextInt();
+		
+		/*int x, y;
 
 		x = Integer.parseInt(JOptionPane.showInputDialog("Unesi cijeli broj"));
-		y = Integer.parseInt(JOptionPane.showInputDialog("Unesi cijeli broj"));
+		y = Integer.parseInt(JOptionPane.showInputDialog("Unesi cijeli broj"));*/
 
 		int broj = 1;
 		int red = x - 1;
@@ -52,7 +60,7 @@ public class MatricaDZ {
 		for (int a = 0; a < x; a++) {
 			System.out.println(Arrays.toString(matrica[a]));
 		}
-
+		//System.out.println(matrica[x-1][y-1]);
 	}
 
 }
